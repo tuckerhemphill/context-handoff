@@ -1,10 +1,10 @@
-# Context-Handoff — LLM Skill for Claude Code & Codex
+# Context-Handoff — Skill for Coding Agents (Claude Code & Codex)
 
 > **How to use:** Download this file and paste the contents into your system prompt, custom instructions, or at the start of a new Claude / ChatGPT / Gemini session to activate the skill.
 
 **Created by** [Tucker Hemphill](https://www.tuckerhemphill.com)  
-**Compatible with:** Claude (all versions), ChatGPT, Gemini, and most instruction-following LLMs  
-**Use case:** Preserving project context across AI sessions (Especially Claude Code & Codex) — no lost history, no repeated explanations, rationale preserved.
+**Compatible with:** Claude Code, Codex, etc.
+**Use case:** Preserving project context across AI sessions (Especially Claude Code & Codex) — no lost history, file structure saved, no repeated explanations, rationale preserved.
 
 ---
 
@@ -14,11 +14,11 @@ AI sessions don't age well. A few things happen as a session runs long — and n
 
 **Context windows degrade quality as they fill.** Research across 18 frontier models including GPT-4.1, Claude Opus 4, and Gemini 2.5 found that every single one gets worse as input length increases. A well-documented cause is the "lost-in-the-middle" effect: models attend well to the beginning and end of a conversation but poorly to the middle, causing 30%+ accuracy drops on information buried in between.
 
-**Auto-compaction strips the reasoning, not just the history.** When a context window fills up and gets summarized, what survives is *what happened* — not *why*. Rationale collapses into conclusions. The decisions you made, the approaches you rejected, the tradeoffs you navigated — gone. Multiple compactions compound this, and tools like Codex CLI explicitly warn users that quality degrades with each one.
+**Auto-compaction strips the reasoning, not just the history.** When a context window fills up and gets summarized, what survives is *what happened* — not *why*. Rationale collapses into conclusions. The decisions you made, the approaches you rejected, the tradeoffs you navigated — gone. Multiple compactions compound this, and tools like Codex CLI explicitly warn users that quality degrades with each one. Additionally, if you heavily rely on the coding agent's decisions, it loses out entirely on the rationale of what _it_ changed, and how the file structure was affected.
 
 **Models fill the gaps with confident-sounding guesses.** As real context thins out, hallucination rates climb. The model doesn't flag uncertainty — it interpolates. And it does it fluently.
 
-**And even without compaction, every new session starts from zero.** The model doesn't know what you built last time, why you made the decisions you made, what you tried and rejected, or where you left off.
+**And even without compaction, every new session starts from zero.** The model doesn't know what you built last time, why you made the decisions you made, what you tried and rejected, where you left off, and file strucutre.
 
 `context-handoff` fixes all of it — generating a structured `.md` file that captures not just *what* changed, but *why*, *what was rejected*, and *exactly where to start next.*
 

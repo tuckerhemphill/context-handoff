@@ -4,7 +4,7 @@
 
 **Created by** [Tucker Hemphill](https://www.tuckerhemphill.com)  
 **Compatible with:** Claude (all versions), ChatGPT, Gemini, and most instruction-following LLMs  
-**Use case:** Preserving project context across AI sessions (Especially Claude Code & Codex) — no lost history, no repeated explanations.
+**Use case:** Preserving project context across AI sessions (Especially Claude Code & Codex) — no lost history, no repeated explanations, rationale preserved.
 
 ---
 

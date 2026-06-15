@@ -1,4 +1,4 @@
-# Context-Handoff — LLM Skill Prompt
+# Context-Handoff — LLM Skill for Claude Code & Codex
 
 > **How to use:** Download this file and paste the contents into your system prompt, custom instructions, or at the start of a new Claude / ChatGPT / Gemini session to activate the skill.
 

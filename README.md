@@ -1,10 +1,10 @@
-# 🧠 context-handoff — LLM Skill Prompt
+# Context-Handoff — LLM Skill Prompt
 
 > **How to use:** Download this file and paste the contents into your system prompt, custom instructions, or at the start of a new Claude / ChatGPT / Gemini session to activate the skill.
 
 **Created by** [Tucker Hemphill](https://www.tuckerhemphill.com)  
 **Compatible with:** Claude (all versions), ChatGPT, Gemini, and most instruction-following LLMs  
-**Use case:** Preserving project context across AI sessions — no lost history, no repeated explanations
+**Use case:** Preserving project context across AI sessions (Especially Claude Code & Codex) — no lost history, no repeated explanations
 
 ---
 
